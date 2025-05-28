@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-05-24T16:08:42.490Z</updated>
+  <updated>2025-05-28T10:23:30.246Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>语言的界与边</title>
+    <link href="http://example.com/2025/05/28/thoughts-boundaries-limits-of-language/"/>
+    <id>http://example.com/2025/05/28/thoughts-boundaries-limits-of-language/</id>
+    <published>2025-05-28T10:18:03.000Z</published>
+    <updated>2025-05-28T10:23:30.246Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="无意义与反指向性，创造性-being"><a href="#无意义与反指向性，创造性-being" class="headerlink" title="无意义与反指向性，创造性(being)"></a>无意义与反指向性，创造性(being)</h2><blockquote><p>我们知道，爱就是去不断地重新创造。——兰波《地狱一季》</p></blockquote><blockquote><p>What I can not create, I do not understand.</p></blockquote><p>书写和记录是一种重新创造，也只有如此才算完成理解之旅的最后拼图。平日，在由书影音构建的空间里，眼耳鼻舌身意，所感所思大多是飘渺的、瞬时的、无显式完整逻辑链条的。一如“寒塘渡鹤影”，“应似飞鸿踏雪泥”。当然其另一侧是发散的、悟性的、联想的、灵感的，倘若不加以固定和整理，它们会随时间慢慢消散于无形。当然你可以说这种固定是失真的，偏颇的。我当然同意这种看法。但问题是不经过“固定”如何确保你真的进入了你所关心的议题呢，就像纪录片的原教旨主义认为记录者应该做墙上的一只苍蝇，真实无差地记录。可是这个真的是“真实”与“无差”么？</p><p>你无法逃避选择，而自我觉知状态的选择本身就包含创造性，这种建构性是具有意义性倾向的。这种建构性与语言具有同构关系，心外无物也可以说是言外无物，“太初有道”也可以是“太初有言”（或者“为”）。</p><p>如果“存在先于本质”，那么你在选择中（不同情境下的可选空间以及选择的上手实施）就已经是在“存在”了。书写本身提供了一种存在的 playground。</p><p>同样书写的指向性是书写者在有意或无意地综合分析了感知与素材后的输出，此时书写者的这个过程可以类比为 mapping，自然书写者就是 function，而书写者本身无时无刻不在这个过程中更新自己的 function，偶然和随机蕴藏其中，一如“千江有水千江月”，反指向性和创造性自然也蕴藏其中。</p><h2 id="边和界"><a href="#边和界" class="headerlink" title="边和界"></a>边和界</h2><p>维特根斯坦言：语言的边界是世界的边界。未知确否。不过可以肯定的是我们无法想象一个没有语言的世界。那么语言有边界么，边界在何处呢？</p><p>语言除了发声与音节，其所指与能指，难道只是一堆符号和规则集合么？</p><p>“欲辩已忘言”是不是差不多触到了某种边界？</p><p>还是说语言只是通达“言外之意”的途径和方法？所以应该“得鱼忘筌”？</p><p>数学、符号逻辑系统、计算机语言是我们讨论的语言么？他们的边界在何处？</p><p>语言的世界是否也是“有界无边”？</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;无意义与反指向性，创造性-being&quot;&gt;&lt;a href=&quot;#无意义与反指向性，创造性-being&quot; class=&quot;headerlink&quot; title=&quot;无意义与反指向性，创造性(being)&quot;&gt;&lt;/a&gt;无意义与反指向性，创造性(being)&lt;/h2&gt;&lt;blockq</summary>
+      
+    
+    
+    
+    <category term="thoughts" scheme="http://example.com/categories/thoughts/"/>
+    
+    
+    <category term="有所思" scheme="http://example.com/tags/%E6%9C%89%E6%89%80%E6%80%9D/"/>
+    
+  </entry>
   
   <entry>
     <title>vLLM 源码阅读 - Block Manager 与核心调度逻辑 (part2)</title>
