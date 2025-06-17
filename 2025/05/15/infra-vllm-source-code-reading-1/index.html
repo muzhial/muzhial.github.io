@@ -369,7 +369,7 @@ mjx-container[display="true"] + br {
 <p><strong>说明：</strong>基于 vLLM v0.7.3，commit id: <code>ed6e9075d31e32c8548b480a47d1ffb77da1f54c (HEAD, tag: v0.7.3)</code></p>
 </blockquote>
 <h2 id="vLLM-调度逻辑"><a href="#vLLM-调度逻辑" class="headerlink" title="vLLM 调度逻辑"></a>vLLM 调度逻辑</h2><p>介绍具体的调度逻辑前，需要梳理一下 block manager 的实现。调度逻辑中，block manager 会作为具体的判断条件。</p>
-<p>block manager subsystem 的设计可以参考官方的 <a class="link" target="_blank" rel="noopener" href="https://github.com/vllm-project/vllm/pull/3492">PR<i class="fas fa-external-link-alt"></i></a>。</p>
+<p>block manager subsystem 的设计可以参考官方的 <a class="link" target="_blank" rel="noopener" href="https://github.com/vllm-project/vllm/pull/3492">PR</a>。</p>
 <p>现总结如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">BlockSpaceManager</span><br><span class="line">    将 `SequenceGroup` 的操作映射为 lower-level 的操作</span><br><span class="line">BlockTable</span><br><span class="line">    将单个 `Sequence` 的 KV Cache 映射为 physical 的分配，处理 sliding_window / lookahead 的分配</span><br><span class="line">DeviceAwareBlockAllocator</span><br><span class="line">    将 block 分配映射到 device，处理 swapping</span><br><span class="line">BlockAllocator</span><br><span class="line">    分配和释放 block，重新计数、copy-on-write 等</span><br><span class="line">Block</span><br><span class="line">    将 token ids 存入</span><br></pre></td></tr></table></figure>
 
