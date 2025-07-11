@@ -177,20 +177,7 @@
       align-items: center;
       /* height: 100vh; */
     }
-    .palm-container {
-      display: flex;
-      align-items: center;
-      gap: 40px;
-      font-family: serif;
-    }
-    .palm {
-      width: 80px;
-      height: 160px;
-      fill: rgb(44, 121, 3);
-      position: relative;
-      z-index: 1;
-    }
-    .text-container {
+    .header-container {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -198,9 +185,8 @@
       position: relative;
       z-index: 10;
     }
-    .text {
+    .header-text {
       font-size: 32px;
-      font-weight: bold;
       color: #555;
       text-align: center;
       max-width: 300px;
@@ -228,56 +214,22 @@
         text-align: center;
         font-size: 12px;
       }
-      .palm-container {
-        gap: 10px;
-      }
-      .text {
+      .header-text {
         font-size: 24px;
         max-width: 250px;
       }
-    }
-    .i-section-divider {
-      margin: 50px auto;
-      position: relative;
-      width: 100%;
-      max-width: 50px;
-    }
-    .i-section-divider svg {
-      width: 80%;
-      /* height: 40px; */
-      transform: rotate(90deg);
-      transform-origin: center;
-    }
-    .i-section-divider .i-divider-text {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, -60%);
-      background: #fefcf8;
-      padding: 0 20px;
-      font-size: 20px;
-      font-weight: bold;
-      color: rgb(44, 121, 3);
+      .icon-pad-r {
+        padding-right: 10px;
+      }
     }
   </style>
 </head>
 <body>
 
 <div class="i-container">
-<div class="palm-container">
-  <!-- Left palm leaf -->
-  <svg class="palm" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
-    <path d="M50 190 C 40 150, 60 140, 50 110
-             C 40 130, 20 100, 50 90
-             C 30 90, 10 60, 50 60
-             C 20 50, 10 20, 50 30
-             C 40 10, 50 0, 50 0"
-          stroke="rgb(44, 121, 3)" stroke-width="4" fill="none"/>
-  </svg>
-
-  <div class="text-container">
-    <div class="text">🤗</div>
-    <div class="text">Hi, 我是木之</div>
+  <div class="header-container">
+    <div class="header-text">🤗</div>
+    <div class="header-text">Hi, 我是木之</div>
     <div>mizuki0al AT gmail</div>
     <div class="text-norm">
       <a class="link"  style="color: #555;"  target="_blank" rel="noopener" href="https://www.douban.com/people/64650499" >豆瓣</a>
@@ -287,33 +239,39 @@
     </div>
   </div>
 
-  <!-- Right palm leaf (mirrored) -->
-  <svg class="palm" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg" style="transform: scaleX(-1);">
-    <path d="M50 190 C 40 150, 60 140, 50 110
-             C 40 130, 20 100, 50 90
-             C 30 90, 10 60, 50 60
-             C 20 50, 10 20, 50 30
-             C 40 10, 50 0, 50 0"
-          stroke="rgb(44, 121, 3)" stroke-width="4" fill="none"/>
-  </svg>
-</div>
-</div>
-
-<div class="i-section-divider">
-  <svg viewBox="0 0 100 100" width="60" height="60">
-    <path d="M50 10
-             L30 30 L50 50 L70 30 Z
-             M50 50 L30 70 L50 90 L70 70 Z
-             M30 30 L70 70
-             M70 30 L30 70"
-          fill="none" stroke="rgb(44, 121, 3)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg>
 </div>
 
 <h3>一些符号学</h3>
-<div><i class="fa-solid fa-tags"></i>&nbsp;&nbsp;&nbsp;算法工程师 (CV -> LLM | MLLM)</div>
-<div><i class="fa-solid fa-tags"></i>&nbsp;&nbsp;&nbsp;书 | 摇滚乐 | 电影</div>
-<div><i class="fa-solid fa-tags"></i>&nbsp;&nbsp;&nbsp;INFJ | 偏好一切智性的事物</div>
+<div><i class="fa-solid fa-tags" style="padding-right: 1em;"></i><span>算法工程师 (CV >> LLM | MLLM)</span></div>
+<div><i class="fa-solid fa-tags" style="padding-right: 1em;"></i><span>INFJ | 偏好一切智性的事物</span></div>
+<div><i class="fa-solid fa-tags" style="padding-right: 1em;"></i><span>书 | 摇滚乐 | 电影</span></div>
+<div><i class="fa-solid fa-book" style="padding-left: 2em; padding-right: 0.5em;"></i><span>杂食。喜哲学，分析哲学尤甚</span></div>
+<div><i class="fa-solid fa-guitar" style="padding-left: 2em; padding-right: 0.5em;"></i><span>后摇，盯鞋，噪音，先锋</span></div>
+<div><i class="fa-solid fa-film" style="padding-left: 2em; padding-right: 0.5em;"></i><span>法国新浪潮</span></div>
+
+<div><i class="fa-solid fa-music" style="padding-right: 1em;"></i><span>Top 10</span></div>
+<div style="padding-left: 2em;"><a class="link"   target="_blank" rel="noopener" href="https://music.douban.com/subject/1395312" >f#a# (infinity symbol)</a> -- Godspeed You! Black Emperor!</div>
+<div style="padding-left: 2em;"><a class="link"   target="_blank" rel="noopener" href="https://music.douban.com/subject/1417523" >In The Court Of The Crimson King</a> -- King Crimson</div>
+<div style="padding-left: 2em;"><a class="link"   target="_blank" rel="noopener" href="https://music.douban.com/subject/27123288" >中國 古琴，文人的樂器</a> -- 蘇思棣</div>
+<div style="padding-left: 2em;"><a class="link"   target="_blank" rel="noopener" href="https://music.douban.com/subject/6728324" >影子</a> -- IZ乐队 / 马木尔</div>
+<div style="padding-left: 2em;"><a class="link"   target="_blank" rel="noopener" href="https://music.douban.com/subject/1401729" >The Velvet Underground</a> -- The Velvet Underground</div>
+<div style="padding-left: 2em;"><a class="link"   target="_blank" rel="noopener" href="https://music.douban.com/subject/1849980" >雨吁</a> -- 窦唯</div>
+<div style="padding-left: 2em;"><a class="link"   target="_blank" rel="noopener" href="https://music.douban.com/subject/1401801" >Daydream Nation</a> -- Sonic Youth</div>
+<div style="padding-left: 2em;"><a class="link"   target="_blank" rel="noopener" href="https://music.douban.com/subject/1394751" >Loveless</a> -- My Bloody Valentine</div>
+<div style="padding-left: 2em;"><a class="link"   target="_blank" rel="noopener" href="https://music.douban.com/subject/1401771" >Unknown Pleasures</a> -- Joy Division</div>
+<div style="padding-left: 2em;"><a class="link"   target="_blank" rel="noopener" href="https://music.douban.com/subject/1417793" >Substance</a> -- New Order</div>
+
+<div><i class="fa-solid fa-video" style="padding-right: 1em;"></i><span>Top 10</span></div>
+<div style="padding-left: 2em;"><a class="link"   target="_blank" rel="noopener" href="https://movie.douban.com/subject/1292434" >一一</a> -- 杨德昌</div>
+<div style="padding-left: 2em;"><a class="link"   target="_blank" rel="noopener" href="https://movie.douban.com/subject/1292226" >2001太空漫游</a> -- 斯坦利·库布里克</div>
+<div style="padding-left: 2em;"><a class="link"   target="_blank" rel="noopener" href="https://movie.douban.com/subject/1291556" >乡愁</a> -- 安德烈·塔可夫斯基</div>
+<div style="padding-left: 2em;"><a class="link"   target="_blank" rel="noopener" href="https://movie.douban.com/subject/1294194" >悲情城市</a> -- 侯孝贤</div>
+<div style="padding-left: 2em;"><a class="link"   target="_blank" rel="noopener" href="https://movie.douban.com/subject/1294039" >绿光</a> -- 埃里克·侯麦</div>
+<div style="padding-left: 2em;"><a class="link"   target="_blank" rel="noopener" href="https://movie.douban.com/subject/1294252" >雾中风景</a> -- 西奥·安哲罗普洛斯</div>
+<div style="padding-left: 2em;"><a class="link"   target="_blank" rel="noopener" href="https://movie.douban.com/subject/1291818" >饮食男女</a> -- 李安</div>
+<div style="padding-left: 2em;"><a class="link"   target="_blank" rel="noopener" href="https://movie.douban.com/subject/1401520" >抛掉书本上街去</a> -- 寺山修司</div>
+<div style="padding-left: 2em;"><a class="link"   target="_blank" rel="noopener" href="https://movie.douban.com/subject/1291557" >花样年华</a> -- 王家卫</div>
+<div style="padding-left: 2em;"><a class="link"   target="_blank" rel="noopener" href="https://movie.douban.com/subject/1296339" >爱在黎明破晓前</a> -- 理查德·林克莱特</div>
 
 </body>
 </html>
